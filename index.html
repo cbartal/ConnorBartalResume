@@ -1,127 +1,138 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="utf-8">
-      <title>Connor Bartal Resume</title>
-   </head>
-   <body>
-      <section id="header">
-         <img id="topPicture" class="resumeImage" src="SoundfestMeEdited.jpg" width="300px">
-         <div id="pageHeading">
+	<head>
+		<meta charset="utf-8">
+		<title>Connor Bartal</title>
+    </head>
+    <body>
+        <div id="pageHeading">
             <header>
-               <h1 id="title" class="resumeName">Connor P. Bartal</h1>
-               <hr>
+                <h1 id="title">Connor P. Bartal</h1>
+                <img class="resumeImage" src="SoundfestMeEdited.jpg" width="300" alt="Profile Image">
+                <nav>
+                    <a href="#contactInfo">Contact Information</a>
+                    <a href="#education">Education</a>
+                    <a href="#workExperience">Work Experience</a>
+                    <a href="#skillsExperience">Skills</a>
+                    <a href="#achievements">Achievements</a>
+                    <a href="#socialMedias">Social Media</a>
+                </nav>
             </header>
-            <p class="resumeText">1630 Patrick Henry Drive, Apt 351, Blacksburg, VA 24060</p>
-            <a href="mailto:cbartal@vt.edu" target="__blank">cbartal@vt.edu</a>
-            <p class="resumeText">(804)445-4352</p>
-         </div>
-      </section>
-      <br>
-      <div id="mainResume">
-         <section id="Education" class="resumeSection">
+        </div>
+        <section id="contactInfo" class="contact">
+            <h2 class="sectionHeader">Contact Information</h2>
+            <address id="collegeAddress" class="address">
+                <p>1630 Patrick Henry Drive, Apartment 351, Blacksburg, VA 24060</p>
+            </address>
+            <address class="phoneNumber">
+                <p>(804)445-4352</p>
+            </address>
+            <address class="emailAddress">
+                <a href="mailto:cbartal@vt.edu">cbartal@vt.edu</a>
+            </address>
+        </section>
+        <section id="education" class="credential-container">
             <h2 class="sectionHeader">Education</h2>
-            <hr>
-            <div>
-               <h3 class="resumeSubHeading">Virginia Tech</h3>
-               <p class="resumeText">Blacksburg VA - Expected Graduation: May 2021</p>
-               <p class="resumeText">B.S. Computer Science</p>
-               <p class="resumeText">Minors: Mathematics, Cyber Security</p>
-               <p class="resumeText">GPA: 3.77</p>
+            <div id="virginiatech">
+                <h3 class="subsec-header">Virginia Tech</h3>
+                <ul class="educationList">
+                    <li>Blacksburg VA - Expected Graduation: May 2021</li>
+                    <li>B.S. Computer Science</li>
+                    <li>Minors: Mathematics, Cyber Security</li>
+                    <li>GPA: 3.77</li>
+                </ul>
             </div>
-            <div>
-               <h3 class="resumeSubHeading">Hanover High School</h3>
-               <p class="resumeText">Hanover VA - Graduated: June 2017</p>
-               <p class="resumeText">General Education</p>
-               <p class="resumeText">GPA: 4.62 (Graduated 4th in class)</p>
+            <div id="hanoverhighschool">
+                <h3 class="subsec-header">Hanover High School</h3>
+                <ul class="educationList">
+                    <li>Hanover VA - Graduated: June 2017</li>
+                    <li>General Education</li>
+                    <li>GPA: 4.62 (Graduated 4th in class)</li>
+                </ul>
             </div>
-         </section>
-         <br>
-         <section id="Work Experience" class="resumeSection">
+        </section>
+        <section id="workExperience" class="credential-container">
             <h2 class="sectionHeader">Work Experience</h2>
-            <hr>
-            <div id="NIWC">
-               <h3 class="resumeSubHeading">Naval Information Warfare Center - Student Trainee (Intern)</h3>
-               <p class="resumeText">May 2020 - August 2020</p>
-               <p class="resumeText">Washington D.C. - (Virtual) Full Time</p>
-               <ul class="resumeList">
-                  <li class="resumeText">Served in the 5.9 Mission Assurance Competency</li>
-                  <li class="resumeText">Begun training and shadowing to aid in the transition to full time upon graduation</li>
-                  <li class="resumeText">Spearheaded the initial development of a FPR File Parser to aid in code analysis</li>
-               </ul>
+            <div id="niwc">
+                <h3 class="subsec-header">Naval Information Warfare Center - Atlantic</h3>
+                <p>May 2020 - August 2020</p>
+                <p>Washington D.C. - (Virtual) Full Time</p>
+                <ul class="workList">
+                    <li >Served in the 5.9 Mission Assurance Competency</li>
+                    <li >Begun training and shadowing to aid in the transition to full time upon graduation</li>
+                    <li >Spearheaded the initial development of a FPR File Parser to aid in code analysis</li>  
+                </ul>
             </div>
-            <div id="Genworth">
-               <h3 class="resumeSubHeading">Genworth Financial - Summer Intern</h3>
-               <p class="resumeText">May 2019 - August 2019</p>
-               <p class="resumeText">Richmond Virginia - Full Time</p>
-               <ul class="resumeList">
-                  <li class="resumeText">Worked on the ServiceNow Administration Team</li>
-                  <li class="resumeText">Helped Implement Major Incident Management into the System</li>
-                  <li class="resumeText">Analyzed system usage to reduce user license count for the system</li>
-               </ul>
+            <div id="genworth">
+                <h3 class="subsec-header">Genworth Financial</h3>
+                <p>May 2019 - August 2019</p>
+                <p>Richmond Virginia - Full Time</p>
+                <ul class="workList">
+                    <li>Worked on the ServiceNow Administration Team</li>
+                    <li>Helped Implement Major Incident Management into the System</li>
+                    <li>Analyzed system usage to reduce user license count for the system</li>  
+                </ul>
             </div>
-            <div id="FedReserve">
-               <h3 class="resumeSubHeading">Federal Reserve Bank of Richmond - Summer Intern</h3>
-               <p class="resumeText">May 2018 - August 2018</p>
-               <p class="resumeText">Richmond/Henrico Virginia - Full Time</p>
-               <ul class="resumeList">
-                  <li class="resumeText">Worked on an Oracle based Database Operations team</li>
-                  <li class="resumeText">Helped with documentation and data organization</li>
-                  <li class="resumeText">Lead testing team for a system change that was later implemented</li>
-               </ul>
+            <div id="federalReserve">
+                <h3 class="subsec-header">Federal Reserve Bank of Richmond</h3>
+                <p>May 2018 - August 2018</p>
+                <p>Richmond/Henrico Virginia - Full Time</p>
+                <ul class="workList">
+                    <li>Worked on an Oracle based Database Operations team</li>
+                    <li>Helped with documentation and data organization</li>
+                    <li>Lead testing team for a system change that was later implemented</li>  
+                </ul>
             </div>
-         </section>
-         <br>
-         <section id="Leadership Experience" class="resumeSection">
-            <h2 class="sectionHeader">Leadership Experience</h2>
-            <hr>
-            <ul class="resumeList">
-               <li class="resumeText">Vice President of Communication for the Virginia Tech Union (2020 - 2021)</li>
-               <li class="resumeText">Director of Graphic Design for the Virginia Tech Union (2019 - 2020)</li>
-               <li class="resumeText">Recipient of the West Point Leadership Award (Spring 2016)</li>
-            </ul>
-         </section>
-         <br>
-         <section id="Skills">
-            <h2 class="sectionHeader">Skills</h2>
-            <hr>
-            <ul class="resumeList">
-               <li class="resumeText">Proficient in Microsoft Office</li>
-               <li class="resumeText">Java Programming</li>
-               <li class="resumeText">Python Programming</li>
-               <li class="resumeText">C Programming</li>
-               <li class="resumeText">Scala Programming</li>
-               <li class="resumeText">Prolog Programming</li>
-               <li class="resumeText">HTML / Web Design</li>
-               <li class="resumeText">Project Management</li>
-               <li class="resumeText">Communication</li>
-               <li class="resumeText">Technical Writing</li>
-               <li class="resumeText">Leadership</li>
-               <li class="resumeText">ServiceNow Administration</li>
-               <li class="resumeText">Photoshop / Graphic Design</li>
-            </ul>
-         </section>
-         <br>
-         <section id="Achievements" class="resumeSection">
+        </section>
+        <section id="skillsExperience" class="credential-container">
+            <h2 class="sectionHeader">Skills/Qualifications</h2>
+            <div id="generalSkills">
+                <h3 class="subsec-header">Skills</h3>
+                <ul class="skills-list">
+                    <li>Microsoft Office</li>
+                    <li>Project Management</li>
+                    <li>Communication</li> 
+                    <li>Technical Writing</li>
+                    <li>Leadership</li>
+                    <li>Photoshop / Graphic Design</li>
+                </ul>
+            </div>
+            <div id="computerSkills">
+                <h3 class="subsec-header">Computer Skills</h3>
+                <ul class="skills-list">
+                    <li>Java</li>
+                    <li>Python</li>
+                    <li>C</li>
+                    <li>Scala</li>
+                    <li>Prolog</li>
+                    <li>ServiceNow Administration</li>
+                    <li>SQL</li>
+                    <li>JavaScript</li>
+                </ul>
+            </div>
+            <div id="leadershipExperience">
+                <h3 class="subsec-header">Leadership Experience</h3>
+                <ul class="skills-list">
+                    <li>Vice President of Communication for the Virginia Tech Union (2020 - 2021)</li>
+                    <li>Director of Graphic Design for the Virginia Tech Union (2019 - 2020)</li>
+                    <li>Recipient of the West Point Leadership Award (Spring 2016)</li>
+                </ul>
+            </div>
+        </section>
+        <section id="achievements" class="Achievements">
             <h2 class="sectionHeader">Achievements</h2>
-            <hr>
-            <ul class="resumeList">
-               <li class="resumeText">Department of Defense Cyber Scholarship Recipient (2019 - 2021)</li>
-               <li class="resumeText">Henrico Federal Credit Union 2017 Fran Chaffin Scholarship Winner</li>
-               <li class="resumeText">1st Degree Black Belt: Taekwondo</li>
+            <ul class="achievementsList">
+                <li>Department of Defense Cyber Scholarship Recipient (2019 - 2021)</li>
+                <li>Henrico Federal Credit Union 2017 Fran Chaffin Scholarship Winner</li>
+                <li>1st Degree Black Belt: Taekwondo</li>
             </ul>
-         </section>
-         <br>
-         <section id="Socials" class="resumeSection">
-            <h2 class="sectionHeader">Social Media</h2>
-            <hr>
+        </section>
+        <div id="socialMedias" class="Socials">
             <nav id="socialsNav" class="socialNavigation">
-               <a class="resumeLink" href="https://www.instagram.com/cbartal" target="__blank">Instagram</a>
-               <a class="resumeLink" href="https://twitter.com/Connor_Bartal" target="__blank">Twitter</a>
-               <a class="resumeLink" href="https://www.linkedin.com/in/connorbartal/" target="__blank">LinkedIn</a>
-            </nav>
-         </section>
-         <br><br><br><br><br><br>
-      </div>
-   </body>
+                <a href="https://www.instagram.com/cbartal" target="_blank">Instagram</a>
+                <a href="https://twitter.com/Connor_Bartal" target="_blank">Twitter</a>
+                <a href="https://www.linkedin.com/in/connorbartal/" target="_blank">LinkedIn</a>
+             </nav>
+        </div>
+    </body>
 </html>
