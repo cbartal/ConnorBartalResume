@@ -1,0 +1,138 @@
+/* Connor Bartal Site Style Project 2 */
+
+/*###########################################################*/
+/* root variables and body styling */
+:root {
+    --banner-size: 2em;
+    
+    --mainBackground-color: #262529;
+    --secondaryColor-color: #033d49;
+    --border-color: #5299D3;
+    --header-color: #a7ccff;
+    --text-color: #ffffff;
+}
+body {
+    background-color: var( --mainBackground-color); 
+}
+/*###########################################################*/
+/* sets the section padding to account for the fixed banner */
+section {
+    padding-top: var( --banner-size);
+    padding-bottom: 2em;
+    border-bottom-width: .5em;
+    border-bottom-color: var(--border-color);
+    border-bottom-style: solid;
+    background-color: var(--mainBackground-color);
+    text-align: center;
+    overflow: hidden;
+}
+/* change the background color of a few sections */
+.sectionSecondaryColor {
+    background-color: var(--secondaryColor-color);
+}
+/*###########################################################*/
+/* styles the fixed banner that stays at the tope of the page */
+#pageHeading {
+    position: fixed;
+    height: var( --banner-size);
+    width: 100%;
+    top: 0em;
+    left: 0em;
+    padding-top: .5em;
+    background-color: var( --mainBackground-color);
+    text-align: center;
+}
+/* styles the links on the page to have a default color of white */
+a:link, :visited {
+    color: var( --text-color);
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+/* specifically style banner links so add space between them */
+.bannerLink:link, :visited  {
+    font-size: 16px;
+    padding: 10px;
+}
+/*###########################################################*/
+/* make the resume image circular and bordered */
+#resumeImage {
+    border-radius: 80%;
+    width: 30%;
+    border-color: var(--border-color);
+    border-style: solid;
+    border-width: .5em;
+}
+/*###########################################################*/
+/*style all headers of the h1-6 class - the headings and sub headings */
+:is(h1,h2, h3, h4, h5, h6) {
+    font-family:'Courier New', Courier, monospace;
+    color: var(--header-color);
+    font-size: 20pt;
+    font-weight: bold;
+}
+/* Make the Name a little bigger than the rest of the headings */
+#title {
+    font-size: 25pt;
+}
+/* Make all sub headings a bit smaller */
+.subsec-header{
+    font-size: 16pt;
+}
+/* underline all section headers */
+.sectionHeader {
+    text-decoration: underline;
+}
+/*###########################################################*/
+/* style all the p class elements */
+/* color the email link to match the rest of the text - since it gets hit by a class above */
+p, li, #emailAddress {
+    font-family:Arial, Helvetica, sans-serif;
+    color: var(--text-color);
+    font-size: 12pt;
+}
+/* fix the spacing of the ul class elements*/
+ul {
+    display: table; 
+    margin: 0 auto;
+    text-align: left;
+}
+/* create some more space between list elements */
+li {
+    padding-bottom: 1%;
+}
+/*###########################################################*/
+/* styles for side by side divs */
+.sideBySide {
+    width:35%;
+    min-height: 15em;
+}
+.sideBySideLeft {
+    float: left;
+    padding-left: 15%;
+}
+.sideBySideRight {
+    float: right;
+    padding-right: 15%;
+}
+/*###########################################################*/
+/* style for social media icons */
+/*center the social media div */
+#socialMedias {
+    text-align: center;
+    padding: 2em;
+}
+/*styling for the icons themselves */
+.socialMediaIcon {
+    /* since I used pngs, doing this allows me to control the inside color of the icons */
+    border-radius: 100%;
+    background-color: var(--border-color);
+    /* set the width and margin to space them out and resize */
+    width: 3em;
+    margin: .5em;
+
+    transition: all ease 1s;
+}
+/* set a hover animation (I really wanted to play around with css animations) */
+.socialMediaIcon:hover {
+    transform: rotate(360deg);
+}

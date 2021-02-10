@@ -3,37 +3,39 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Connor Bartal</title>
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <div id="pageHeading">
-            <header>
-                <h1 id="title">Connor P. Bartal</h1>
-                <img class="resumeImage" src="SoundfestMeEdited.jpg" width="300" alt="Profile Image">
-                <nav>
-                    <a href="#contactInfo">Contact Information</a>
-                    <a href="#education">Education</a>
-                    <a href="#workExperience">Work Experience</a>
-                    <a href="#skillsExperience">Skills</a>
-                    <a href="#achievements">Achievements</a>
-                    <a href="#socialMedias">Social Media</a>
-                </nav>
-            </header>
-        </div>
+        <header id="pageHeading">
+            <nav>
+                <a class="bannerLink" href="#contactInfo">Contact Information</a>
+                <a class="bannerLink" href="#education">Education</a>
+                <a class="bannerLink" href="#workExperience">Work Experience</a>
+                <a class="bannerLink" href="#skillsExperience">Skills</a>
+                <a class="bannerLink" href="#achievements">Achievements</a>
+                <a class="bannerLink" href="#socialMedias">Social Media</a>
+            </nav>
+        </header>
+        <section id="imageTitle">
+            <img id="resumeImage" src="SoundfestMeEdited.png" alt="Profile Image">
+            <h1 id="title">Connor P. Bartal</h1>
+            <p>“Education is learning what you didn’t even know you didn’t know.” - Daniel Boorstin</p> 
+        </section>
         <section id="contactInfo" class="contact">
             <h2 class="sectionHeader">Contact Information</h2>
-            <address id="collegeAddress" class="address">
+            <address id="collegeAddress" class="resumeAddress">
                 <p>1630 Patrick Henry Drive, Apartment 351, Blacksburg, VA 24060</p>
             </address>
-            <address class="phoneNumber">
+            <address class="resumeAddress">
                 <p>(804)445-4352</p>
             </address>
-            <address class="emailAddress">
-                <a href="mailto:cbartal@vt.edu">cbartal@vt.edu</a>
+            <address class="resumeAddress">
+                <a id="emailAddress" href="mailto:cbartal@vt.edu">cbartal@vt.edu</a>
             </address>
         </section>
-        <section id="education" class="credential-container">
+        <section id="education" class="credential-container sectionSecondaryColor">
             <h2 class="sectionHeader">Education</h2>
-            <div id="virginiatech">
+            <div id="virginiatech" class="sideBySide sideBySideLeft">
                 <h3 class="subsec-header">Virginia Tech</h3>
                 <ul class="educationList">
                     <li>Blacksburg VA - Expected Graduation: May 2021</li>
@@ -42,7 +44,7 @@
                     <li>GPA: 3.77</li>
                 </ul>
             </div>
-            <div id="hanoverhighschool">
+            <div id="hanoverhighschool" class="sideBySide sideBySideRight">
                 <h3 class="subsec-header">Hanover High School</h3>
                 <ul class="educationList">
                     <li>Hanover VA - Graduated: June 2017</li>
@@ -84,9 +86,9 @@
                 </ul>
             </div>
         </section>
-        <section id="skillsExperience" class="credential-container">
+        <section id="skillsExperience" class="credential-container sectionSecondaryColor">
             <h2 class="sectionHeader">Skills/Qualifications</h2>
-            <div id="generalSkills">
+            <div id="generalSkills" class="sideBySide sideBySideLeft">
                 <h3 class="subsec-header">Skills</h3>
                 <ul class="skills-list">
                     <li>Microsoft Office</li>
@@ -97,7 +99,7 @@
                     <li>Photoshop / Graphic Design</li>
                 </ul>
             </div>
-            <div id="computerSkills">
+            <div id="computerSkills" class="sideBySide sideBySideRight">
                 <h3 class="subsec-header">Computer Skills</h3>
                 <ul class="skills-list">
                     <li>Java</li>
@@ -129,9 +131,18 @@
         </section>
         <div id="socialMedias" class="Socials">
             <nav id="socialsNav" class="socialNavigation">
-                <a href="https://www.instagram.com/cbartal" target="_blank">Instagram</a>
-                <a href="https://twitter.com/Connor_Bartal" target="_blank">Twitter</a>
-                <a href="https://www.linkedin.com/in/connorbartal/" target="_blank">LinkedIn</a>
+                <a href="https://www.instagram.com/cbartal" target="_blank">
+                    <img src="iconfinder_Circled_Instagram_svg_5279112.png" class="socialMediaIcon" >
+                </a>
+                <a href="https://twitter.com/Connor_Bartal" target="_blank">
+                    <img src="iconfinder_Circled_Twitter_svg_5279123.png" class="socialMediaIcon">
+                </a>
+                <a href="https://www.linkedin.com/in/connorbartal/" target="_blank">
+                    <img src="iconfinder_Circled_Linkedin_svg_5279114.png" class="socialMediaIcon">
+                </a>
+                <a href="https://www.facebook.com/connor.bartal" target="_blank">
+                    <img src="iconfinder_Circled_Facebook_svg_5279111 (1).png" class="socialMediaIcon">
+                </a>
              </nav>
         </div>
     </body>
